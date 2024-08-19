@@ -43,12 +43,12 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="social">
+      {/* <div className="social">
         <i className="fab fa-linkedin"></i>
         <i className="fab fa-instagram"></i>
         <i className="fab fa-twitter"></i>
         <i className="fab fa-youtube"></i>
-      </div>
+      </div> */}
       <div className="info">
         <div className="copyright"> &copy; 2024 {"Daren's"} Detailed LLC</div>
       </div>
