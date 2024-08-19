@@ -3,93 +3,118 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className={styles.pageWrapper}>
+      <div className={styles.container}>
+        {/* Main Banner Section */}
+        <section className={styles.banner}>
+          <Image
+            src="/soapy_main_car.jpg"
+            alt="Main Banner"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+            className={styles.bannerImage}
+          />
+          <div className={styles.bannerText}>
+            <h1>Mobile Auto Detailing</h1>
+            <p>Professional Detailing Services</p>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className={styles.services}>
+          <h2>Our Services</h2>
+          <div className={styles.serviceCards}>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/soapy_sport.jpg"
+                  alt="soapy sports car"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+              <h3>Exterior Detailing</h3>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/soapy_mid.jpg"
+                  alt="soapy midsize SUV"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+              <h3>Interior Detailing</h3>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/soapy_full.jpg"
+                  alt="soapy full size SUV"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+              <h3>Full Package</h3>
+            </div>
+          </div>
+        </section>
+
+        {/* Portfolio Section */}
+        <section className={styles.portfolio}>
+          <h2>Our Work</h2>
+          <div className={styles.portfolioGrid}>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/portfolio1.jpg"
+                  alt="Portfolio 1"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/portfolio2.jpg"
+                  alt="Portfolio 2"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/portfolio3.jpg"
+                  alt="Portfolio 3"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/portfolio4.jpg"
+                  alt="Portfolio 4"
+                  layout="fill"
+                  objectFit="cover"
+                  className={styles.cardImage}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
