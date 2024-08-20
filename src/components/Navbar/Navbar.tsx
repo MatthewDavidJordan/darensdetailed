@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import "./NavBar.css";
+import "./Navbar.css";
 import { CodeIcon, HamburgerMenuClose, HamburgerMenuOpen } from "./Icons";
 
 function NavBar() {
