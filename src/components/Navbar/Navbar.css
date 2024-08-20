@@ -77,7 +77,7 @@
   
   .nav-item:hover:after {
     width: 100%;
-    background: #f0f4fd;
+    background: #DAA14C;
   }
   
   .nav-item .active {

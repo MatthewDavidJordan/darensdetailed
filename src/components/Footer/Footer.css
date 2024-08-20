@@ -40,6 +40,8 @@ footer {
   overflow-x: hidden;
   padding: 0 1rem; /* Add padding to prevent content from touching the edge */
   box-sizing: border-box;
+  border-top: #DAA14C solid 2px;
+  border-bottom: #DAA14C solid 2px;
 }
 
 footer .info {

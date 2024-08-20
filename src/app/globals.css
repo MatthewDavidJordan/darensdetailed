@@ -68,25 +68,8 @@ header h1 {
   text-align: center;
 }
 
-/* Basic Button styles */
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
 /* Links */
 a {
-  color: #007bff;
   text-decoration: none;
 }
 

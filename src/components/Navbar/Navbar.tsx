@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link href="/" className="nav-logo">
+        <Link href="/" className="nav-logo" style={{ textDecoration: "none" }}>
           <span>{"Daren's Detailed"}</span>
         </Link>
 
@@ -28,6 +28,7 @@ function NavBar() {
           <li className="nav-item">
             <Link
               href="/about"
+              style={{ textDecoration: "none" }}
               className={`nav-links ${pathname === "/about" ? "active" : ""}`}
               onClick={handleClick}
             >
@@ -42,6 +43,7 @@ function NavBar() {
           <li className="nav-item">
             <Link
               href="/contact"
+              style={{ textDecoration: "none" }}
               className={`nav-links ${pathname === "/contact" ? "active" : ""}`}
               onClick={handleClick}
             >

@@ -1,8 +1,3 @@
-/* Define a wrapper or root class for your page */
-.pageWrapper {
-  --card-width: 32%; /* Set the default card width */
-}
-
 /* Container for the entire page */
 .container {
   width: 100%;
@@ -18,33 +13,82 @@
 }
 
 .bannerImage {
+  filter: brightness(50%);
   z-index: -1;
 }
 
 .bannerText {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
 .bannerText h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
+  /* add drop shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .bannerText p {
   font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerText hr {
+  width: 70px;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  height: 8px;
+  background-color: #DAA14C;
+}
+
+.bannerText button {
+  background-color: #DAA14C;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 30px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerText button:hover {
+  background-color: #b8873f;
 }
 
 /* Services Section */
 .services {
   padding: 2rem 1rem;
-  background-color: #f1f1f1;
   text-align: center;
   background-color: #18191B;
+}
+
+.services h2 {
+  color: white;
+}
+
+.services p {
+  color: white;
+  font-size: 2rem;
+}
+
+.services hr {
+  width: 70px;
+  border: none;
+  background-color: #DAA14C;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .serviceCards {
@@ -52,20 +96,32 @@
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card {
   background-color: #202020;
+  border: #505050 solid 0.3px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  width: var(--card-width); /* Use the card width variable */
+  width: 400px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 550px;
+  min-height: 450px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: white;
 }
 
 .imageWrapper {
