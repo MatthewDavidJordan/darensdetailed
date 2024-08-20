@@ -1,0 +1,81 @@
+/* Main Banner Section */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+
+.bannerImage {
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.bannerText {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+}
+
+.bannerText h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  /* add drop shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerText p {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerText hr {
+  width: 70px;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  height: 8px;
+  background-color: #daa14c;
+}
+
+.bannerText button {
+  background-color: #daa14c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 30px;
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerText button:hover {
+  background-color: #b8873f;
+}
+
+@media screen and (max-width: 1100px) {
+  .bannerText {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .bannerText p {
+    font-size: 1.25rem;
+  }
+
+  .bannerText hr {
+    width: 0px;
+  }
+}
