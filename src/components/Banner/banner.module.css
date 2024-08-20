@@ -8,6 +8,7 @@
 
 .bannerImage {
   filter: brightness(50%);
+  object-fit: cover;
   z-index: -1;
 }
 

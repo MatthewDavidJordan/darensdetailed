@@ -8,8 +8,7 @@ function Banner() {
       <Image
         src="/soapy_main_car.jpg"
         alt="Main Banner"
-        layout="fill"
-        objectFit="cover"
+        fill={true}
         quality={100}
         priority={true}
         className={styles.bannerImage}
