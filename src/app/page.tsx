@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
 
-import Banner from "../components/Banner/Banner";
-import Services from "../components/Services/Services";
-import Portfolio from "../components/Portfolio/Portfolio";
+import Banner from "@/components/Banner/Banner";
+import Services from "@/components/Services/Services";
+import Portfolio from "@/components/Portfolio/Portfolio";
 
 export default function Home() {
   return (
