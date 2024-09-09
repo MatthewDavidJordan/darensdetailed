@@ -7,25 +7,6 @@ li {
   list-style: none;
 }
 
-input {
-  position: relative;
-  height: 100%;
-}
-
-input[type="email"] {
-  padding: 7px 8px;
-  border: 1px solid rgb(206, 206, 206);
-}
-
-input[type="button"] {
-  border: none;
-  padding: 7px 12px;
-  background: rgb(79, 223, 79);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(79, 223, 79);
-  cursor: pointer;
-}
-
 main {
   flex: 1;
 }
@@ -40,8 +21,8 @@ footer {
   overflow-x: hidden;
   padding: 0 1rem; /* Add padding to prevent content from touching the edge */
   box-sizing: border-box;
-  border-top: #DAA14C solid 2px;
-  border-bottom: #DAA14C solid 2px;
+  border-top: #daa14c solid 2px;
+  border-bottom: #daa14c solid 2px;
 }
 
 footer .info {
@@ -50,7 +31,7 @@ footer .info {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
 }
 
 footer .info .legal {
@@ -60,32 +41,6 @@ footer .info .legal {
 
 footer .info .legal > a {
   margin-right: 15px;
-}
-
-/* Middle - social media links */
-footer .social {
-  padding: 1.5rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-footer .social i {
-  font-size: 1.4rem;
-  margin: 2px 8px;
-  cursor: pointer;
-}
-
-footer .social:before {
-  position: absolute;
-  content: "";
-  width: 90%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.192);
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* Top - pages, email newsletter form ... */

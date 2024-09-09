@@ -8,7 +8,7 @@ function Footer() {
     <footer>
       <div className="top">
         <div className="pages">
-          <ul>
+          {/* <ul>
             <h3>Brand Name</h3>
             <li>
               <a href="#">Home</a>
@@ -41,7 +41,7 @@ function Footer() {
             <li>
               <a href="#">Our Values</a>
             </li>
-          </ul>
+          </ul> */}
 
           <ContactForm />
         </div>
