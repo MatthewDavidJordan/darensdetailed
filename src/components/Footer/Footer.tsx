@@ -1,5 +1,6 @@
 "use client";
 
+import ContactForm from "@/components/ContactForm/ContactForm";
 import "./Footer.css";
 
 function Footer() {
@@ -41,6 +42,8 @@ function Footer() {
               <a href="#">Our Values</a>
             </li>
           </ul>
+
+          <ContactForm />
         </div>
       </div>
       {/* <div className="social">
