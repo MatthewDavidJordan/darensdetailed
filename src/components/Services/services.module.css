@@ -9,6 +9,10 @@
   color: white;
 }
 
+.services h4 {
+  color: rgb(183, 183, 183);
+}
+
 .services p {
   color: white;
   font-size: 2rem;

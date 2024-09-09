@@ -19,6 +19,7 @@ function Services() {
             />
           </div>
           <h3>Sport</h3>
+          <h4>Covers: Sport Cars</h4>
         </div>
         <div className={styles.card}>
           <div className={styles.imageWrapper}>
@@ -30,6 +31,7 @@ function Services() {
             />
           </div>
           <h3>Mid-Size</h3>
+          <h4>Covers: Sedans + Small SUVs</h4>
         </div>
         <div className={styles.card}>
           <div className={styles.imageWrapper}>
@@ -41,6 +43,7 @@ function Services() {
             />
           </div>
           <h3>Full-Size</h3>
+          <h4>Covers: Pickups + Full Size SUVs</h4>
         </div>
       </div>
     </section>
