@@ -60,49 +60,52 @@ function ContactForm() {
   };
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <div className="form-group">
-        <input
-          type="text"
-          name="firstName"
-          placeholder="First Name"
-          value={formData.firstName}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          value={formData.lastName}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div className="form-group">
-        <textarea
-          name="message"
-          placeholder="Message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-      </div>
-      <button type="submit">Send</button>
-      {status && <p>{status}</p>}
-    </form>
+    <>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <h2>Contact Us</h2>
+        <div className="form-group">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <textarea
+            name="message"
+            placeholder="Message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+        {status && <p>{status}</p>}
+      </form>
+    </>
   );
 }
 

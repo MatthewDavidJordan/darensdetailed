@@ -6,7 +6,7 @@ function Services() {
   return (
     <section className={styles.services} id="services">
       <h2>Services</h2>
-      <p>WE PROVIDE EXCELLENT SERVICES</p>
+      <p>FOR ANY SIZED CAR</p>
       <hr />
       <div className={styles.serviceCards}>
         <div className={styles.card}>
