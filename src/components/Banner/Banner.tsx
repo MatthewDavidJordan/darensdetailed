@@ -16,7 +16,10 @@ function Banner() {
       <div className={styles.bannerText}>
         <hr />
         <h1>Mobile Auto Detailing</h1>
-        <p>We wash everything</p>
+        <p>
+          Experience a more convenient way to maintain your vehicle in showroom
+          quality condition
+        </p>
         <a href="#services">
           <button> Services </button>
         </a>

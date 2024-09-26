@@ -62,7 +62,7 @@ function ContactForm() {
   return (
     <>
       <form className="contact-form" onSubmit={handleSubmit}>
-        <h2>Contact Us</h2>
+        <h2>Get in touch</h2>
         <div className="form-group">
           <input
             type="text"
