@@ -51,7 +51,7 @@ function Banner() {
                 height={20}
                 className={styles.callIcon}
               />
-              Call Me
+              Call Now
             </button>
           </a>
         ) : (
