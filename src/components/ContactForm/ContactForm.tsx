@@ -83,21 +83,20 @@ function ContactForm() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setStatus("Sending...");
 
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/contact`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
-        setStatus("Email sent successfully!");
+        const data = await response.json();
+        setStatus(data.message || "Email sent successfully!");
         setFormData({
           firstName: "",
           lastName: "",
@@ -123,11 +122,12 @@ function ContactForm() {
           },
         });
       } else {
-        setStatus("Failed to send email.");
+        const errorData = await response.json();
+        setStatus(errorData.message || "Failed to send email.");
       }
     } catch (error) {
-      console.error(error);
-      setStatus("Failed to send email.");
+      console.error("Error sending form:", error);
+      setStatus("Failed to send email. Please try again later.");
     }
   };
 
@@ -293,7 +293,11 @@ function ContactForm() {
         ></textarea>
       </div>
       <button type="submit">Send</button>
-      {status && <p>{status}</p>}
+      {status && (
+        <p style={{ color: "white", marginTop: "10px", textAlign: "center" }}>
+          {status}
+        </p>
+      )}
     </form>
   );
 }
