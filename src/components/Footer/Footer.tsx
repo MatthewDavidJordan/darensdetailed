@@ -14,16 +14,12 @@ function Footer() {
               Reach out using the email or phone number below. Or get in touch!
             </p>
             <li>
-              <a href="#">Meet Our Team</a>
+              <a href="mailto:darensdetailed@gmail.com">
+                darensdetailed@gmail.com
+              </a>
             </li>
             <li>
-              <a href="#">Our Responsibilities</a>
-            </li>
-            <li>
-              <a href="#">Our Codes</a>
-            </li>
-            <li>
-              <a href="#">Our Values</a>
+              <a href="tel:203-571-7860">203-571-7860</a>
             </li>
           </ul>
 

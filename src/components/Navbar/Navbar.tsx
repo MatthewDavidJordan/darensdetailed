@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "./Navbar.css";
-import { CodeIcon, HamburgerMenuClose, HamburgerMenuOpen } from "./Icons";
+import { HamburgerMenuClose, HamburgerMenuOpen } from "./Icons";
+import Image from "next/image";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -20,35 +21,27 @@ function NavBar() {
         </Link>
 
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          {/* <li className="nav-item">
-            <Link href="/" className={`nav-links ${pathname === "/" ? "active" : ""}`} onClick={handleClick}>
-              Home
-            </Link>
-          </li> */}
           <li className="nav-item">
-            <Link
-              href="/about"
-              style={{ textDecoration: "none" }}
-              className={`nav-links ${pathname === "/about" ? "active" : ""}`}
+            <a
+              href="https://www.instagram.com/darens.detailed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-links"
               onClick={handleClick}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                padding: "0 10px",
+              }}
             >
-              About
-            </Link>
-          </li>
-          {/* <li className="nav-item">
-            <Link href="/blog" className={`nav-links ${pathname === "/blog" ? "active" : ""}`} onClick={handleClick}>
-              Blog
-            </Link>
-          </li> */}
-          <li className="nav-item">
-            <Link
-              href="/contact"
-              style={{ textDecoration: "none" }}
-              className={`nav-links ${pathname === "/contact" ? "active" : ""}`}
-              onClick={handleClick}
-            >
-              Contact Us
-            </Link>
+              <Image
+                src="/instagram.svg"
+                alt="Instagram"
+                width={24}
+                height={24}
+                style={{ filter: "brightness(0) invert(1)" }} // This makes the icon white
+              />
+            </a>
           </li>
         </ul>
         <div className="nav-icon" onClick={handleClick}>

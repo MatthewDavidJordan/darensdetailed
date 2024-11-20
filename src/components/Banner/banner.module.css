@@ -19,18 +19,19 @@
   transform: translate(-50%, -50%);
   text-align: left;
   color: white;
+  padding-left: 15%;
 }
 
 .bannerText h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  /* add drop shadow */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .bannerText p {
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
 }
 
 .bannerText hr {
@@ -66,17 +67,43 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding: 0 20px; /* Add padding for smaller screens */
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Maximum width to maintain readability */
   }
 
+  .bannerText h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .bannerText p {
+    font-size: 1.25rem;
+    margin: 0 auto; /* Center the paragraph text */
+  }
+
+  .bannerText hr {
+    width: 70px; /* Keep the hr visible */
+    margin: 1rem auto; /* Center the hr */
+  }
+
+  .bannerText button {
+    margin: 30px auto 0; /* Center the button */
+    display: block; /* Make button respect margin auto */
+  }
+}
+
+/* Additional breakpoint for smaller phones */
+@media screen and (max-width: 480px) {
   .bannerText h1 {
     font-size: 2rem;
   }
 
   .bannerText p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
-  .bannerText hr {
-    width: 0px;
+  .bannerText {
+    top: 50%;
   }
 }
