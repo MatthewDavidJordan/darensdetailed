@@ -2,6 +2,8 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  border: 1px solid #daa14c; /* Added this line */
+  border-radius: 8px; /* Added this line for rounded corners */
 }
 
 h2 {
@@ -22,6 +24,45 @@ h2 {
   background-color: rgb(39, 39, 39);
   border-radius: 4px;
   font-size: 16px;
+  color: white;
+}
+
+.services-section {
+  margin: 20px 0;
+  color: white;
+}
+
+.services-section h3 {
+  margin: 15px 0;
+  color: #daa14c;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+  .checkbox-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.checkbox-item label {
+  cursor: pointer;
   color: white;
 }
 

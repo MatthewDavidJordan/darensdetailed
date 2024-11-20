@@ -43,22 +43,35 @@
   background-color: #daa14c;
 }
 
+.bannerText a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .bannerText button {
   background-color: #daa14c;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   margin-top: 30px;
-  width: 150px;
+  width: 180px; /* Increased width to accommodate icon */
   border-radius: 20px;
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between icon and text */
 }
 
 .bannerText button:hover {
   background-color: #b8873f;
+}
+
+.callIcon {
+  filter: brightness(0) invert(1); /* Makes the SVG white */
 }
 
 @media screen and (max-width: 1100px) {
@@ -67,9 +80,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 0 20px; /* Add padding for smaller screens */
-    width: 100%; /* Take full width */
-    max-width: 600px; /* Maximum width to maintain readability */
+    padding: 0 20px;
+    width: 100%;
+    max-width: 600px;
   }
 
   .bannerText h1 {
@@ -79,17 +92,22 @@
 
   .bannerText p {
     font-size: 1.25rem;
-    margin: 0 auto; /* Center the paragraph text */
+    margin: 0 auto;
   }
 
   .bannerText hr {
-    width: 70px; /* Keep the hr visible */
-    margin: 1rem auto; /* Center the hr */
+    width: 70px;
+    margin: 1rem auto;
+  }
+
+  .bannerText a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .bannerText button {
-    margin: 30px auto 0; /* Center the button */
-    display: block; /* Make button respect margin auto */
+    margin: 30px auto 0;
   }
 }
 

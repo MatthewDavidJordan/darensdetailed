@@ -1,8 +1,29 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./banner.module.css";
 
 function Banner() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Function to check if screen is mobile
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 1100);
+    };
+
+    // Initial check
+    checkIfMobile();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", checkIfMobile);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("resize", checkIfMobile);
+    };
+  }, []);
+
   return (
     <section className={styles.banner}>
       <Image
@@ -20,9 +41,24 @@ function Banner() {
           Experience a more convenient way to maintain your vehicle in showroom
           quality condition
         </p>
-        <a href="#services">
-          <button> Services </button>
-        </a>
+        {isMobile ? (
+          <a href="tel:2035717860">
+            <button>
+              <Image
+                src="/call.svg"
+                alt="Call Icon"
+                width={20}
+                height={20}
+                className={styles.callIcon}
+              />
+              Call Me
+            </button>
+          </a>
+        ) : (
+          <a href="#contact">
+            <button>Get in Touch</button>
+          </a>
+        )}
       </div>
     </section>
   );
